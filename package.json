@@ -18,8 +18,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject",
-    "watch": "npx tailwindcss -i tailwind.css -o src/style.scss --watch"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
