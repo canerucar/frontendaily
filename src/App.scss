@@ -1,0 +1,27 @@
+.fd-wrapper {
+  @apply flex h-screen;
+  
+  .sidebar {
+    @apply min-w-[170px] bg-orange-120;
+
+    &__content {
+      @apply list-none p-3;
+
+      &-item {
+        @apply py-[10px] text-white bg-blue-120 rounded-md flex justify-center mb-1;
+
+        &:hover {
+          @apply opacity-80;
+        }
+
+        .link {
+          @apply no-underline select-none;
+        }
+      }
+    }
+  }
+
+  .content {
+    @apply w-full;
+  }
+}

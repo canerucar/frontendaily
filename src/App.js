@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import './App.scss';
+import CourseCard from './componets/course-card/CourseCard';
+import Home from './componets/home/Home';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <div className="fd-wrapper">
+          <nav className="sidebar">
+            <ul className="sidebar__content">
+              <li className="sidebar__content-item">
+                <Link to="/" className="link">
+                  Home
+                </Link>
+              </li>
+              <li className="sidebar__content-item">
+                <Link to="/about" className="link">
+                  About
+                </Link>
+              </li>
+              <li className="sidebar__content-item">
+                <Link to="/cours" className="link">
+                  Course Card
+                </Link>
+              </li>
+            </ul>
+          </nav>
+          <div className="content">
+            <Switch>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/cours">
+                <CourseCard />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </div>
+        </div>
+      </Router>
+    </>
   );
 }
 
-export default App;
+
+function About() {
+  return <h2>About</h2>;
+}

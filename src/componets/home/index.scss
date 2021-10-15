@@ -1,0 +1,11 @@
+.home-wrapper {
+  @apply text-white h-screen flex flex-col justify-center items-center bg-blue-120 p-5;
+
+  &__content {
+    @apply my-2;
+  }
+
+  &__image {
+    @apply rounded-full mb-[30px];
+  }
+}
