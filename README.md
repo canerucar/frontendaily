@@ -6,8 +6,12 @@
 
 ### Technologies I expect to be used?
 
-#### React, JSX, CSS, SCSS, BEM, tailwindcss
+#### `React, JSX, CSS, SCSS, BEM, tailwindcss`
+
+### Our design resource : [uidesigndaily](https://www.uidesigndaily.com/)
 
 ### How can i run the project?
 
-#### project clone > npm install > npm run start
+#### `project clone > npm install > npm run start`
+
+### 1- Course Card Design link : [Click For Design](https://www.uidesigndaily.com/posts/figma-course-card-day-1462)
