@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+
+.course-wrapper {
+  @apply bg-blue-130 h-screen flex items-center justify-center font-mulish;
+
+  &__content {
+    @apply w-[367px] h-[714px] bg-white rounded-3xl p-10 relative;
+
+    box-shadow: 0px 12px 1px -5px #CDDAF3;
+    
+    &-img {
+      @apply rounded-[20px] opacity-80 mb-[30px];
+
+      box-shadow: 0px 17px 17px -10px rgba(110, 107, 255, 0.4);
+    }
+
+    &-round {
+      @apply absolute w-[66px] h-[66px] top-[13%] left-[40%] rounded-full flex justify-center items-center bg-transparent-100;
+
+      .vector {
+        @apply w-[24px] h-[30px];
+      }
+    }
+
+    &-price {
+      @apply flex gap-[10px] mb-[30px];
+
+      .left {
+        @apply flex flex-col;
+
+        &-top {
+          @apply text-gray-120 text-sm line-through font-semibold;
+        }
+
+        &-bottom {
+          @apply text-black-120 text-[22px] font-bold;
+        }
+      }
+
+      .right {
+        @apply mt-auto w-[73px] bg-green-120 py-[5px] px-[10px] text-sm text-white font-bold rounded-[20px];
+      }
+    }
+
+    &-buttons {
+      @apply flex flex-col mb-14;
+
+      .item {
+        @apply h-[55px] bg-blue-140 rounded-[5px] font-semibold text-base mb-[15px] text-white;
+
+        box-shadow: 0px 4px 0px #3d3ae3;
+
+        &:hover {
+          @apply shadow-none bg-blue-150 text-blue-140 transition-all;
+        }
+      }
+
+      .text {
+        @apply text-center text-gray-120 font-semibold text-sm;
+      }
+    }
+
+    &-footer {
+      .title {
+        @apply text-black-120 text-lg;
+      }
+
+      .list {
+        @apply list-disc text-black-120 font-medium leading-5;
+      }
+    }
+  }
+}

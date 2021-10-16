@@ -17,11 +17,6 @@ export default function App() {
                 </Link>
               </li>
               <li className="sidebar__content-item">
-                <Link to="/about" className="link">
-                  About
-                </Link>
-              </li>
-              <li className="sidebar__content-item">
                 <Link to="/cours" className="link">
                   Course Card
                 </Link>
@@ -30,9 +25,6 @@ export default function App() {
           </nav>
           <div className="content">
             <Switch>
-              <Route path="/about">
-                <About />
-              </Route>
               <Route path="/cours">
                 <CourseCard />
               </Route>
@@ -45,9 +37,4 @@ export default function App() {
       </Router>
     </>
   );
-}
-
-
-function About() {
-  return <h2>About</h2>;
 }

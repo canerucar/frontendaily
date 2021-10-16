@@ -1,15 +1,28 @@
 const colors = {
   black: {
     DEFAULT: '#000000',
+    120: '#191E45',
   },
   white: {
     DEFAULT: '#ffffff',
   },
   blue: {
     120: '#40476d',
+    130: '#F4F7FD',
+    140: '#6E6BFF',
+    150: '#E9E9FF',
   },
   orange: {
     120: '#eb6534',
+  },
+  gray: {
+    120: '#464A67',
+  },
+  green: {
+    120: '#639B1B',
+  },
+  transparent: {
+    100: 'rgba(255, 255, 255, 0.6)',
   }
 };
 
