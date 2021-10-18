@@ -6,6 +6,8 @@
   }
 
   &__image {
-    @apply rounded-full mb-7;
+    @apply rounded-full;
+
+    margin-bottom: 30px;
   }
 }

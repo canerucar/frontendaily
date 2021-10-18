@@ -4,26 +4,39 @@
   @apply bg-blue-130 h-screen flex items-center justify-center font-mulish;
 
   &__content {
-    @apply w-[367px] h-[714px] bg-white rounded-3xl p-10 relative;
+    @apply bg-white rounded-3xl p-10 relative;
 
+    width: 367px;
+    height: 714px;
     box-shadow: 0px 12px 1px -5px #CDDAF3;
     
     &-img {
-      @apply rounded-[20px] opacity-80 mb-[30px];
+      @apply opacity-80;
 
+      border-radius: 20px;
+      margin-bottom: 30px;
       box-shadow: 0px 17px 17px -10px rgba(110, 107, 255, 0.4);
     }
 
     &-round {
-      @apply absolute w-[66px] h-[66px] top-[13%] left-[40%] rounded-full flex justify-center items-center bg-transparent-100;
+      @apply absolute rounded-full flex justify-center items-center bg-transparent-100;
+
+      width: 66px;
+      height: 66px;
+      top: 13%;
+      left: 40%;
 
       .vector {
-        @apply w-[24px] h-[30px];
+        width: 24px;
+        height: 30px;
       }
     }
 
     &-price {
-      @apply flex gap-[10px] mb-[30px];
+      @apply flex;
+
+      gap: 10px;
+      margin-bottom: 30px;
 
       .left {
         @apply flex flex-col;
@@ -33,12 +46,18 @@
         }
 
         &-bottom {
-          @apply text-black-120 text-[22px] font-bold;
+          @apply text-black-120 font-bold;
+
+          font-size: 22px;
         }
       }
 
       .right {
-        @apply mt-auto w-[73px] bg-green-120 py-[5px] px-[10px] text-sm text-white font-bold rounded-[20px];
+        @apply mt-auto bg-green-120 text-sm text-white font-bold;
+        
+        width: 73px;
+        padding: 5px 10px;
+        border-radius: 20px;
       }
     }
 
@@ -46,9 +65,12 @@
       @apply flex flex-col mb-14;
 
       .item {
-        @apply h-[55px] bg-blue-140 rounded-[5px] font-semibold text-base mb-[15px] text-white;
+        @apply bg-blue-140 font-semibold text-base text-white;
 
         box-shadow: 0px 4px 0px #3d3ae3;
+        height: 55px;
+        border-radius: 5px;
+        margin-bottom: 15px;
 
         &:hover {
           @apply shadow-none bg-blue-150 text-blue-140 transition-all;

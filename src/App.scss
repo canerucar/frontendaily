@@ -2,13 +2,17 @@
   @apply flex h-screen;
   
   .sidebar {
-    @apply min-w-[170px] bg-orange-120;
+    @apply bg-orange-120;
+
+    min-width: 170px;
 
     &__content {
       @apply list-none p-3;
 
       &-item {
-        @apply py-[10px] text-white bg-blue-120 rounded-md flex justify-center mb-1;
+        @apply text-white bg-blue-120 rounded-md flex justify-center mb-1;
+
+        padding: 10px 0;
 
         &:hover {
           @apply opacity-80;
