@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import './App.scss';
 import CourseCard from './componets/course-card/CourseCard';
 import Home from './componets/home/Home';
+import Footer from 'componets/footer-ui/Footer';
 
 export default function App() {
   return (
@@ -21,12 +22,20 @@ export default function App() {
                   Course Card
                 </Link>
               </li>
+              <li className="sidebar__content-item">
+                <Link to="/footer" className="link">
+                  Footer UI
+                </Link>
+              </li>
             </ul>
           </nav>
           <div className="content">
             <Switch>
               <Route path="/cours">
                 <CourseCard />
+              </Route>
+              <Route path="/footer">
+                <Footer />
               </Route>
               <Route path="/">
                 <Home />

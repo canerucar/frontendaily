@@ -1,0 +1,51 @@
+.f-w {
+  @apply bg-white-120 h-screen flex items-center justify-center;
+
+  font-family: IBM Plex Sans;
+
+  .footer-wrapper {
+    @apply w-[1000px] h-[350px] bg-black-130 rounded-2xl py-10 px-[60px] gap-20 text-white flex;
+
+    box-shadow: 0px 25px 35px -15px rgba(15, 30, 82, 0.32);
+
+    &-item{
+      &__title {
+        .title {
+          @apply text-sm font-bold mb-2;
+        }
+
+        .list {
+          @apply text-xs leading-10 font-medium;
+        }
+      }
+
+      &__social {
+        @apply flex flex-col justify-center;
+
+        .subscribe {
+          input {
+            @apply h-[51px] w-[214px] mr-2 border-2 border-blue-170 rounded-md p-4 mt-3;
+
+            background-color: transparent;
+          }
+
+          button {
+            @apply h-[51px] bg-white-120 rounded-md text-black-130 font-bold w-[131px] text-sm;
+          }
+        }
+
+        .social {
+          @apply mt-10;
+
+          &-w {
+            @apply flex gap-3 mt-2;
+
+            img {
+              @apply cursor-pointer;
+            }
+          }
+        }
+      }
+    } 
+  }
+}
