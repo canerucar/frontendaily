@@ -15,3 +15,4 @@
 #### `project clone > npm install > npm run start`
 
 ### 1- Course Card Design link : [Click For Design](https://www.uidesigndaily.com/posts/figma-course-card-day-1462)
+### 2- Footer Component : [Click For Design](https://www.uidesigndaily.com/posts/figma-footer-ui-design-dark-theme-day-1429)
